@@ -1,0 +1,505 @@
+/* nav a{
+    background-color: bisque;
+}
+#section1 ul a {
+    background-color: palevioletred;
+}
+.emphase{
+    background-color: bisque;
+}
+.emphase ul a{
+    background-color: rgb(198, 154, 240);
+    
+}
+#div1 li> ul {
+    background-color: rgb(120, 120, 187);
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  font-weight: 400;
+}
+
+hr {
+  width: 30px;
+  height: 2px;
+  background-color: #fb774b;
+}
+p{
+    font-size: 16px;
+    color:#465b52;
+    margin: 15px 0 20px 0;
+}
+.section-P1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #d19090;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border:0px;
+  outline: none;
+  transition: 0.2s;
+}
+button.white{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #FFF;
+  background-color:transparent;
+  cursor: pointer;
+  border:1px solid #fff;
+  outline: none;
+  transition: 0.2s;
+}
+body{
+    width:100%
+}
+
+#header .logo{
+  width: 70px;
+  height:70px;
+}
+
+#header .logo img{
+    width: 140%;
+    height: 140%;
+    display: flex;
+    justify-content: center;
+}
+
+#header{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding:20px 80px ;
+     background: #E3E6F3;
+     box-shadow: 0 10px 15px rgb(0,0,0,0.06);
+     z-index: 999;
+     position: sticky;
+     top: 0;
+     left: 0;
+     padding-bottom: 20px;
+     height: 100%;
+}
+
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#1a1a1a ;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: palevioletred;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height:     2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#hero{
+     /* background-image: url("../ASOcaftan/output-onlinepngtools\ \(1\).png"); */
+     height: 103vh ;
+     width: 100%;
+     background-size: cover;
+     background-position: top 5% right 10% ;
+     background-color: #E3E6F3;
+     padding: 0 0px 0px 80px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     outline: none;
+ }
+   
+ 
+
+#hero img{
+    width:99%;
+    height: 150%;
+    padding-left:0%;
+    padding-right: 34.%;
+
+}
+#hero h4{
+    padding-bottom: 5px;
+}
+#hero h1{
+  color: #088178;
+
+}
+#hero button{
+    background-image:url("") ;
+    background-color: rgb(223, 180, 194);
+    color: #088178;
+    border-radius: 20px;
+    padding: 14px 80px 14px 55px ;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size:20px; 
+}
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding:25px 15px;
+  box-shadow:20px 20px 34px rgba(0,0,0,0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px ;
+  margin: 15px 0;
+
+
+}
+#feature .fe-box:hover{
+  box-shadow: 10px 10px 54px rgb(70, 62,221,0.1);
+}
+#feature .fe-box img{ 
+  width: 100%;
+  margin-bottom: 10px;
+}
+#feature .fe-box h6{
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px ;
+  color: #088178;
+  background-color: #fddde4;
+
+
+
+}
+#feature .fe-box:nth-child(2) h6{
+  background-color: #cdebbc;
+
+}
+#feature .fe-box:nth-child(3) h6{
+  background-color: #d1e8f2;
+
+}
+#feature .fe-box:nth-child(4) h6{
+  background-color: #cdd4f8;
+
+}
+#feature .fe-box:nth-child(5) h6{
+  background-color: #f6dbf6;
+
+}
+#feature .fe-box:nth-child(6) h6{
+  background-color: #fff2e5;
+
+}
+
+#product1{
+  text-align:center ;
+}
+
+#product1 .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top:20px ;
+  flex-wrap: wrap;
+}
+
+
+#product1 .pro{
+  width:23% ;
+  min-width: 250px;
+  padding: 10px 12px ;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgb(0,0,0,0.02);
+  margin: 15px 0 ;
+  transition: 0.2 ease;
+  position: relative;
+}
+#product1 .pro:hover{
+  box-shadow: 20px 20px 30px rgb(0,0,0,0.06);
+
+
+}
+#product1 .pro img{
+  width: 100%;
+  border-radius: 20px ;
+}
+
+#product1 .pro .des{
+  text-align: start;
+  padding: 10px 0;
+
+}
+#product1 .pro .des span
+{
+  color: #606063;
+  font-size: 12px;
+}
+#product1 .pro .des h5{
+  padding-top: 7px;
+  color:  black;
+  ;
+  font-size: 14px;
+
+}
+#product1 .pro .des i{
+  font-size: 12px;
+  color: purple;
+
+}
+#product1 .pro .des h4{
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #f17a8e;
+
+}
+#product1 .pro .cart{
+  width:  60px;
+  height: 95px;
+  line-height: 0px;
+  border-radius: 0px;
+  font-weight:  500;
+  /*background-color: #e0e9eb;*/
+
+  color: #088178;
+ /* border: 1px solid #cce7d0;*/
+  position: absolute;
+  bottom: 1px;
+  right: 10px;
+}
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../ASOcaftan/bann.jpg");
+}
+
+#banner h4 {
+  color: #fff;
+  font-size: 16px ;
+
+
+}
+#banner h2 {
+  color: palevioletred;
+  font-size: 30px;
+  padding: 10px 0;
+}
+#banner h2 span{
+  color: rgb(175, 60, 60);
+}
+
+#banner button:hover{
+  background: #088178;
+  color: #fff;
+
+}
+#sm-banner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url("./pinkbackround.png");
+ 
+}
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../ASOcaftan/2.jpg");
+  min-width: 500px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px ;
+}
+
+#sm-banner .banner-box2{
+  background-image: url("../ASOcaftan/3.jpg");
+
+}
+#sm-banner h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300 ;
+}
+#sm-banner h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800 ;
+}
+
+
+#sm-banner span {
+  color: #fff;
+  font-size:14px;
+  font-weight: 500 ;
+  padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button {
+  background-color: #088178;
+  border: 1px solid #088178;
+
+}
+#banner3{
+  display: flex;
+  justify-content: space-between ;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+#banner3 .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../ASOcaftan/caf1.jpg");
+  min-width: 30%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px ;
+  margin-bottom: 20px;
+
+
+}
+#banner3 .banner-box2{
+  background-image: url("../ASOcaftan/1.jpg") ;
+}
+#banner3 .banner-box3{
+  background-image: url("../ASOcaftan/MANAL.jpg") ;
+
+}
+#banner3 h2{
+  color: white;
+  font-weight: 900;
+  font-size: 22px;
+}
+#banner3 h3{
+  color: white;
+  font-weight: 800;
+  font-size:15px;
+}
+#newsletter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap ;
+  align-items: center;
+  background-image: url("../ASOcaftan/pinkbackround.png");
+  background-position: 20% 30%;
+  background-repeat:no-repeat ;
+}
+#newsletter h4{
+  font-size: 22px;
+  font-weight: 700;
+  color: #070707;
+}
+#newsletter p{
+  font-size: 14px;
+  font-weight: 600;
+  color: grey;
+}
+#newsletter p span{
+  color: rgb(216, 91, 178);
+}
+#newsletter .form{
+  display: flex;
+  width: 40%;
+}
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+   width: 100%;
+   border: 1px solid transparent;
+   border-radius: 4px;
+   outline: none ;
+   border-top-right-radius:0 ;
+   border-bottom-right-radius:0 ;
+}
+#newsletter button{
+  background-color:rgb(228, 193, 216);
+  color: white;
+  white-space: nowrap;
+  border: none;
+  border-top-left-radius:0 ;
+  border-bottom-left-radius:0 ;
+  width: 50%;
+}
+
+

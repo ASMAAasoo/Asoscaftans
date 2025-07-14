@@ -246,3 +246,4 @@ document.addEventListener('click', (e) => {
         nav.classList.remove('active');
     }
 });
+document.addEventListener('contextmenu', event => event.preventDefault());

@@ -35,5 +35,7 @@ Asoscaftans is an e-commerce website designed to showcase an exquisite collectio
   - **Admin Dashboard** 📊
 
 This should be a **complete and well-structured** README for your **Asoscaftans** project, with detailed information for your GitHub repository. Let me know if you need any further tweaks!
+# 🔍 Preview
 
 
+<img width="794" height="640" alt="Screenshot 2025-07-14 191111" src="https://github.com/user-attachments/assets/020e95b4-155d-4245-915c-3c8a8fdfb0e9" />
